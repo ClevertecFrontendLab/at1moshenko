@@ -1,0 +1,112 @@
+.header {
+    height: 170px;
+    background: #f0f5ff;
+}
+
+.gotToHome {
+    width: 56px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 130%;
+    margin-left: -26px;
+    margin-top: 16px;
+}
+
+.title {
+    font-weight: 700;
+
+    font-size: clamp(1.25rem, 0.875rem + 1.67vw, 2.375rem);
+    line-height: 130%;
+
+    margin-left: -26px;
+    margin-top: 0;
+}
+
+.btnSetting {
+    border-radius: 2px;
+    padding: 4px 15px;
+    width: 129px;
+    height: 32px;
+    left: 27px;
+    top: 42px;
+    border: none;
+    display: flex;
+    padding: 0;
+    background: transparent;
+}
+
+.text_setting {
+    margin-left: 10px;
+}
+
+.btnSetting:focus,
+.btnSetting:hover {
+    background: transparent;
+    border: none;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 847px) {
+    .title {
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 834px) {
+    .icon_setting_none {
+        display: none;
+    }
+
+    .btnSetting {
+        margin-right: 9px;
+    }
+}
+
+@media (max-width: 670px) {
+    .btnSetting {
+        margin-right: -6px;
+        margin-top: -8px;
+    }
+
+    .text_setting {
+        display: none;
+    }
+
+    .wrap_icon {
+        border: 1px solid #d9d9d9;
+        background: white;
+        border-radius: 100px;
+        width: 32px;
+        height: 32px;
+        padding: 8px;
+    }
+
+    .icon_setting_none {
+        display: block;
+        position: absolute;
+    }
+    .title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        height: 190px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-top: -8px;
+    }
+}

@@ -1,0 +1,11 @@
+.main {
+    min-height: 100vh;
+    max-width: 1440px;
+    background-image: url(/public/Main\ background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site_layout {
+    background-color: transparent;
+}

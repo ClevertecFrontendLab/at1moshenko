@@ -1,0 +1,269 @@
+.content {
+    position: relative;
+}
+
+.card_description {
+    margin: 24px;
+    border-radius: 2px;
+    max-width: 725px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+
+    color: #343e91;
+}
+
+.card_title {
+    margin: 24px;
+    padding: 0;
+    border-radius: 2px;
+    max-width: 725px;
+    min-height: 150px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.wrapper_mini_card {
+    max-width: 752px;
+    display: flex;
+    margin-left: 24px;
+}
+
+.mini_card {
+    border-radius: 2px;
+    max-width: 230px;
+    max-height: 122px;
+    width: 30%;
+    text-align: center;
+    color: #2f54eb;
+}
+
+.mini_card:not(:first-child):not(:nth-child(1)) {
+    margin-left: 24px;
+}
+
+.mini_card p {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.download_card {
+    background: white;
+    border-radius: 2px;
+    max-width: 328px;
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.02);
+    flex-direction: column;
+    position: absolute;
+    right: 24px;
+    bottom: 42px;
+}
+
+.Download {
+    min-width: 240px;
+}
+
+.Brand {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Brand > p:first-child {
+    margin-right: 30px;
+}
+
+.btn_download {
+    border-radius: 2px;
+    text-align: start;
+    width: 440px;
+    height: 71px;
+    top: 1px;
+    background: #061178;
+}
+
+.Download:hover,
+.Download:focus {
+    color: black;
+    border: white;
+}
+
+.Download p {
+    line-height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 24px;
+}
+
+.Download > p:first-child {
+    color: #2f54eb;
+}
+
+.Download > p:last-child {
+    color: #8c8c8c;
+}
+
+.wrapper_icon_brand {
+    border: 1px solid rgb(25, 39, 239);
+    padding: 12px 0px;
+    max-width: 240px;
+    height: 56px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.icon_brand {
+    margin-right: 8px;
+}
+
+.btn_reviews {
+    position: absolute;
+    bottom: 42px;
+    left: 24px;
+    border-radius: 2px;
+    width: 171px;
+    height: 40px;
+    color: #2f54eb;
+    background: transparent;
+    border: none;
+}
+
+.btn_reviews:focus,
+.btn_reviews:hover,
+.btn_reviews:active {
+    background: transparent;
+    border: none;
+}
+
+@media (max-width: 834px) {
+    .mini_card:not(:first-child):not(:nth-child(1)) {
+        margin-left: 20px;
+    }
+
+    .card_description,
+    .card_title {
+        max-width: 700px;
+    }
+
+    .wrapper_mini_card {
+        max-width: 752px;
+    }
+
+    .mini_card {
+        max-width: 722px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 790px) {
+    .footer {
+        height: 200px;
+    }
+    .content {
+        height: 100vh;
+    }
+
+    .mini_card {
+        max-width: 752px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 680px) {
+    .content {
+        height: 110vh;
+    }
+
+    .Brand {
+        max-width: 650px;
+        width: 100%;
+    }
+
+    .download_card {
+        position: static;
+        max-width: 650px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn_reviews {
+        max-width: 650px;
+        width: 100%;
+        margin-top: 34px;
+        position: static;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .sider {
+        display: none;
+    }
+
+    .sider_open_425px {
+        display: block;
+    }
+
+    .card_description,
+    .card_title,
+    .wrapper_mini_card {
+        margin: 16px;
+    }
+
+    .card_description p {
+        margin: -25px;
+        padding: 16px;
+    }
+
+    .card_title p {
+        max-height: 188px;
+        margin: -25px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .content {
+        height: 5vh;
+    }
+
+    .wrapper_mini_card {
+        flex-direction: column;
+    }
+
+    .mini_card {
+        max-width: 328px;
+        width: 100%;
+    }
+
+    .mini_card:not(:first-child):not(:nth-child(1)) {
+        margin-left: 0px;
+    }
+
+    .footer {
+        position: static;
+    }
+}
